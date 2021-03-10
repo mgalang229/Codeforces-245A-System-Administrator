@@ -14,7 +14,7 @@ int main() {
 	// create 2-arrays one for the server (half) and packets (full)
 	// index 0 = ping a
 	// index 1 = ping b
-	vector<int> server(2, 2), packets(2, 2);
+	vector<int> server(2, 0), packets(2, 0);
 	for (int i = 0; i < n; i++) {
 		// add the corresponding x packets (half packets) to the server
 		server[t[i] - 1] += x[i];
